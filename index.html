@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/vh-check/dist/vh-check.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Manrope:wght@400;700&display=swap" rel="stylesheet"/>
+    <script
+       src="https://kit.fontawesome.com/6faef4fc76.js"
+       crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <main>
+        <section class="image-container">
+            <img src="images/sign-up.jpg" alt="Sign Up Image" />
+            <p>Designed by <a href="http://www.freepik.com/" class="attr">Freepik</a></p>   
+        </section>
+        <section class="form-container">
+            <form spellcheck="false" autocomplete="off">
+                <h1>Sign Up</h1>    
+                <div class="form-inputs">
+                    <div class="form-group">
+                        <div class="error-message">First Name is required</div>
+                        <label for="firstName">First Name</label>   
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
+                    </div>
+                    <div class="form-group">
+                        <div class="error-message">Last Name is required</div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required />
+                    </div>
+                    <div class="form-group">
+                        <div class="error-message">Email is invalid/required</div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required />
+                    </div>
+                    <div class="form-group">
+                        <div class="error-message">Password is required</div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password" required />
+                    </div>  
+                    <div class="form-group">
+                        <div class="error-message">Passwords do not match</div>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required />
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </section>
+    </main>    
+</body>
+</html>
